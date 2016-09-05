@@ -109,10 +109,13 @@ def num_nodes(tree):
     """
 
     
-    if tree is None: #base case
+    if not tree: #base case
         return 0
-        
-    return 1 + num_nodes(tree.data)
+
+    nodes = 1
+    for child in tree.children:
+        nodes += num_nodes(child)
+    return nodes
     
 
 
