@@ -1,0 +1,99 @@
+
+Part 1: Discussion Questions
+
+Recursion
+
+In your own words, what is Recursion?
+Recursion involves breaking a problem down into smaller and smaller bits until you get to a small enough problem that it can be solved easily. Recursion involves a function calling itself
+
+Why is it necessary to have a Base Case?
+A base case is like a halting case in recursion, breaks the chain of recursion.The recursive call must make progress towards a base case else the program would continue calling itself with the same input and may have a runtime error, maximum recursion depth could get exceeded.
+
+Graphs
+
+What is a Graph?
+Graph is a data structure . It helps record relationship between things
+
+How is a Graph different from a Tree?
+A Tree is form of a Graph. Trees have direction (parent / child relationships) and don't contain cycles.tree usually have some kind of sorting or  a property like binary search tree which makes search fast and easy compared to graphs.
+
+Give an example of something that would be good to model with a Graph.
+Trying to find the fastest route to travel between cities where we add weights i.e -Distance between cities and cost to travel 
+
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)             O(1)    O(n)    O(1)     O(n)   O(n)    O(1)                             
+Linked List                     O(n)    O(n)    O(1)     O(1)   O(1)    O(1)                            
+Doubly-Linked List              O(n)    O(n)    O(1)     O(1)   O(1)    O(1)                   
+Queue (as Array)                O(1)    O(n)    O(1)     O(n)   O(n)    O(1)
+Queue (as LL or DLL)            O(n)    O(n)    O(1)     O(1)   O(1)    O(1)
+Stack (as Array, LL, or DLL)    O(n)    O(n)    O(1)     O(n)   O(n)    O(1)   
+Deque (as DLL)                  O(n)    O(n)    O(1)     O(1)   O(1)    O(1)                
+
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+
+
+Fill in Runtime and Memory:
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add     Delete  Iterate Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)    medium
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)    low 
+Binary Search Tree      O(n)    O(n)    O(n)    O(n)    low O(n)             
+Tree                    O(log n)O(log n)O(log n)O(log n)low    
+
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+The algorithm works by comparing each item 
+in the list with the item next to it, and 
+swapping them if required. In other words, 
+the largest element has bubbled to the top of 
+the array. The algorithm repeats this process 
+until it makes a pass all the way through the 
+list without swapping any items.
+
+Describe in words how the Merge Sort algorithm works.
+Merge-sort is based on the divide-and-
+conquer paradigm.
+It involves the following three steps:
+Divide the array into two (or more) subarrays
+Sort each subarray (Conquer)
+Merge them into one 
+
+Describe in words how the Quick Sort algorithm works.
+Quick sort works by first selecting a pivot 
+element from the list. It then creates two lists,
+one containing elements less than the pivot
+and the other containing elements higher
+than the pivot. It then sorts the two lists and
+join them with the pivot in between. Just like
+the Merge sort, when the lists are subdivided
+to lists of size 1, they are considered as
+already sorted.
+
+
+Git Branching
+
+Give an instance when you would use git branching.
+When starting work on a new feature, branch off  using git branching so that we can merge later once the feature works without impacting other aspects of the program
+
+What is a pull request?
+Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, others can review the set of changes, and even push follow-up commits if necessary.
